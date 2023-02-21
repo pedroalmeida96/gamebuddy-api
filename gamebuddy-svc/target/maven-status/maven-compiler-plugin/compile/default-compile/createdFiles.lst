@@ -1,0 +1,6 @@
+com/pedroalmeida/gamebuddyservice/client/RepositoryServiceClient.class
+com/pedroalmeida/gamebuddyservice/model/Game.class
+com/pedroalmeida/gamebuddyservice/model/Game$GameBuilder.class
+com/pedroalmeida/gamebuddyservice/GameBuddyApplication.class
+com/pedroalmeida/gamebuddyservice/service/GameService.class
+com/pedroalmeida/gamebuddyservice/controller/GameController.class

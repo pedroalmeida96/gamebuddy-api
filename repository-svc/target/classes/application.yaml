@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    com.pedroalmeida.repositoryservice: DEBUG
+
+spring:
+  data:
+    mongodb:
+      url: mongodb://localhost:27017/gamebuddy
+      database: gamebuddy

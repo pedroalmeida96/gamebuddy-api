@@ -1,0 +1,6 @@
+/home/pedro/Documents/gamebuddy/repository-svc/src/main/java/com/pedroalmeida/repositoryservice/repository/GameRepository.java
+/home/pedro/Documents/gamebuddy/repository-svc/src/main/java/com/pedroalmeida/repositoryservice/service/GameService.java
+/home/pedro/Documents/gamebuddy/repository-svc/src/main/java/com/pedroalmeida/repositoryservice/controller/GameController.java
+/home/pedro/Documents/gamebuddy/repository-svc/src/main/java/com/pedroalmeida/repositoryservice/exception/GameNotFoundException.java
+/home/pedro/Documents/gamebuddy/repository-svc/src/main/java/com/pedroalmeida/repositoryservice/model/Game.java
+/home/pedro/Documents/gamebuddy/repository-svc/src/main/java/com/pedroalmeida/repositoryservice/RepositoryServiceApplication.java
