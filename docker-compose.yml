@@ -1,31 +1,20 @@
 version: '3.9'
 services:
   gamebuddy-svc:
-    build:
-      context: .
-      dockerfile: Dockerfile.gamebuddy-svc
+    build: ./gamebuddy-svc
     ports:
-      - "8080:8080"
+        - "8080:8080"
     depends_on:
       - repository-svc
-    environment:
-      SPRING_DATA_MONGODB_HOST: repository-svc
-      SPRING_DATA_MONGODB_PORT: 27017
 
   repository-svc:
-    build:
-      context: .
-      dockerfile: Dockerfile.repository-svc
+    build: ./repository-svc
     ports:
       - "8081:8081"
     depends_on:
       - mongodb
-    environment:
-      SPRING_DATA_MONGODB_HOST: mongodb
-      SPRING_DATA_MONGODB_PORT: 27017
 
   mongodb:
     image: mongo
-    restart: always
     ports:
       - "27017:27017"
