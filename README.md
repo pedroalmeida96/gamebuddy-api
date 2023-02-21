@@ -34,3 +34,7 @@ sudo docker build -t repository-svc .
 readlink -f $(which java)
 echo $JAVA_HOME
 
+$> mvn clean package
+sudo apt install maven
+
+https://www.baeldung.com/spring-boot-fix-the-no-main-manifest-attribute#:~:text=Whenever%20we%20encounter%20the%20%E2%80%9Cno,under%20the%20META%2DINF%20folder.
