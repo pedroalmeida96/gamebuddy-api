@@ -2,18 +2,21 @@ package com.pedroalmeida.constantsservice.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @Slf4j
 public class GameTypeService {
 
-    public Flux<String> getAllGameTypes() {
-        log.debug("Retrieving all game types");
+    public Mono<Map<String, List<String>>> getGameTypes() {
         List<String> gameTypes = Arrays.asList("Football", "Basketball");
-        return Flux.fromIterable(gameTypes);
+        Map<String, List<String>> result = new HashMap<>();
+        result.put("gameTypes", gameTypes);
+        return Mono.just(result);
     }
 }
