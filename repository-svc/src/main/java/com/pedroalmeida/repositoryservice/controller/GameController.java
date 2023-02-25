@@ -19,14 +19,14 @@ public class GameController {
 
     @GetMapping
     public Flux<Game> getAllGames() {
-        log.debug("Retrieving call from gamebuddy-svc to retrieve all games");
+        log.debug("GET request from gamebuddy-svc to retrieve all games");
         return gameService.getAllGames();
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Mono<Game> createGame(@RequestBody Game game) {
-        log.info("Creating new game: {}", game);
+        log.debug("POST request from gamebuddy-svc to add new game");
         return gameService.createGame(game);
     }
 
