@@ -11,30 +11,31 @@ For example, to play basketball 5vs5 we need 10 players. If there are only 8, 2 
 To run this app, you need to have the following software installed on your machine:
 - Docker
 - Docker Compose
-- Running the App
 - Clone the repository to your local machine.
 
 In the root directory of the project, run the following command to start the Docker containers:
 
-Copy code
+````
+docker-compose pull
 docker-compose up
+````
 This command will start MongoDB and all the HTTP services.
 
 Open your web browser and navigate to http://localhost:3000 to view the app.
 
-## Modules
+### Modules
 This app consists of the following modules:
 
-### backend
+#### backend
 This module contains the backend HTTP services built using Spring Boot Reactive. The backend provides the REST API for the app and communicates with the MongoDB database.
-
-### frontend
-This module contains the frontend built using TypeScript React. The frontend provides the user interface for the app and communicates with the backend through the REST API.
 - gamebuddy-svc
 - constants-svc
 - repository-svc
 
-API Endpoints
+#### frontend
+This module contains the frontend built using TypeScript React. The frontend provides the user interface for the app and communicates with the backend through the REST API.
+
+#### API Endpoints
 The backend provides the following REST API endpoints:
 
 GET /gameTypes -->> Retrieves all the available game types.
