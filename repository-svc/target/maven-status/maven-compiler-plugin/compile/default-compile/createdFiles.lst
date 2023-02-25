@@ -1,7 +1,0 @@
-com/pedroalmeida/repositoryservice/model/Game$GameBuilder.class
-com/pedroalmeida/repositoryservice/exception/GameNotFoundException.class
-com/pedroalmeida/repositoryservice/RepositoryServiceApplication.class
-com/pedroalmeida/repositoryservice/service/GameService.class
-com/pedroalmeida/repositoryservice/controller/GameController.class
-com/pedroalmeida/repositoryservice/model/Game.class
-com/pedroalmeida/repositoryservice/repository/GameRepository.class

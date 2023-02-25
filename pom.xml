@@ -12,6 +12,7 @@
     <modules>
         <module>gamebuddy-svc</module>
         <module>repository-svc</module>
+        <module>constants-svc</module>
     </modules>
 
     <properties>
