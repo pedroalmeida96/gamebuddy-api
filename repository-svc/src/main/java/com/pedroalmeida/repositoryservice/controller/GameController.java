@@ -31,13 +31,13 @@ public class GameController {
     }
 
     @PutMapping("/{id}")
-    public Mono<Game> updateGame(@PathVariable Long id, @RequestBody Game game) {
+    public Mono<Game> updateGame(@PathVariable String id, @RequestBody Game game) {
         //log.info("Updating game with id {}: {}", id, game);
         return gameService.updateGame(id, game);
     }
 
     @DeleteMapping("/{id}")
-    public Mono<Void> deleteGame(@PathVariable Long id) {
+    public Mono<Void> deleteGame(@PathVariable String id) {
         //log.info("Deleting game with id: {}", id);
         return gameService.deleteGame(id);
     }

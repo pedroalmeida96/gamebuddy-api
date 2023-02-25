@@ -27,17 +27,17 @@ public class GameController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Mono<Game> createGame(@RequestBody Game game) {
-        return null;
+        return gameService.createGame(game);
     }
 
     @PutMapping("/{id}")
-    public Mono<Game> updateGame(@PathVariable Long id, @RequestBody Game game) {
+    public Mono<Game> updateGame(@PathVariable String id, @RequestBody Game game) {
         return null;
     }
 
     @DeleteMapping("/{id}")
-    public Mono<Void> deleteGame(@PathVariable Long id) {
-        return null;
+    public Mono<Void> deleteGame(@PathVariable String id) {
+        return gameService.deleteGame(id);
 
     }
 }

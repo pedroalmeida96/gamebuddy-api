@@ -21,14 +21,14 @@ public class GameService {
     }
 
     public Mono<Game> createGame(Game game) {
-        return null;
+        return repositoryServiceClient.createGame(game);
     }
 
     public Mono<Game> updateGame() {
         return null;
     }
 
-    public Mono<Void> deleteGame(Long id) {
-        return null;
+    public Mono<Void> deleteGame(String id) {
+        return repositoryServiceClient.deleteGame(id);
     }
 }

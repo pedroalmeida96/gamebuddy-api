@@ -27,18 +27,19 @@ public class GameService {
         return gameRepository.save(game);
     }
 
-    public Mono<Game> updateGame(Long id, Game game) {
+    public Mono<Game> updateGame(String id, Game game) {
         log.info("Updating game with id {} in repo: {}", id, game);
         return gameRepository.findById(id)
                 .switchIfEmpty(Mono.error(new GameNotFoundException("Game not found with id " + id)))
                 .map(existingGame -> {
+                    existingGame.setName(game.getName());
                     existingGame.setLocation(game.getLocation());
                     return existingGame;
                 })
                 .flatMap(gameRepository::save);
     }
 
-    public Mono<Void> deleteGame(Long id) {
+    public Mono<Void> deleteGame(String id) {
         log.info("Deleting game with id {} from repository", id);
         return gameRepository.deleteById(id);
     }

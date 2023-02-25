@@ -4,6 +4,7 @@ import com.pedroalmeida.gamebuddyservice.model.Game;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @Component
 public class RepositoryServiceClient {
@@ -18,4 +19,19 @@ public class RepositoryServiceClient {
                 .retrieve()
                 .bodyToFlux(Game.class);
     }
+
+    public Mono<Game> createGame(Game game) {
+        return client.post().uri("/games")
+                .body(Mono.just(game), Game.class)
+                .retrieve()
+                .bodyToMono(Game.class);
+    }
+
+
+    public Mono<Void> deleteGame(String id) {
+        return client.delete().uri("/games/" + id)
+                .retrieve()
+                .bodyToMono(Game.class).then();
+    }
+
 }

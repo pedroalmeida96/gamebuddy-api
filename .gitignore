@@ -1,3 +1,7 @@
 /.idea/
 /gamebuddy-svc/target/
 /repository-svc/target/
+*/target/
+*.jar
+*.war
+*.class
