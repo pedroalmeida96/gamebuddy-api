@@ -28,7 +28,7 @@ public class GameService {
     }
 
     public Mono<Game> updateGame(Long id, Game game) {
-        log.info("Updating game with id {} in repository: {}", id, game);
+        log.info("Updating game with id {} in repo: {}", id, game);
         return gameRepository.findById(id)
                 .switchIfEmpty(Mono.error(new GameNotFoundException("Game not found with id " + id)))
                 .map(existingGame -> {
