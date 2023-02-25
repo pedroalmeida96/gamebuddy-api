@@ -5,8 +5,6 @@
 *.iws
 
 # Build output
-gamebuddy-svc/target/
-repository-svc/target/
 target/
 build/
 *.jar
