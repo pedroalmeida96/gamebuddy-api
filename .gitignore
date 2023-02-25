@@ -5,7 +5,7 @@
 *.iws
 
 # Build output
-target/
+*/target/
 build/
 *.jar
 *.war
