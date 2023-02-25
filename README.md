@@ -80,6 +80,8 @@ https://docs.docker.com/engine/install/ubuntu/
 
 
 sudo docker-compose down
+sudo docker-compose ps
+
 
 ver o q corre em cada porta
 sudo lsof -i :27017

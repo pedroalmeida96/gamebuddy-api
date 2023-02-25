@@ -3,7 +3,7 @@ services:
   gamebuddy-svc:
     build: ./gamebuddy-svc
     ports:
-        - "8080:8080"
+        - "8079:8079"
     depends_on:
       - repository-svc
 
