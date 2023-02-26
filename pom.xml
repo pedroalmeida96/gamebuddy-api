@@ -43,11 +43,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.pedroalmeida</groupId>
-            <artifactId>common</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>
