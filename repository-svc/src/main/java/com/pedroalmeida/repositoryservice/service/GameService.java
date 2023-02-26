@@ -2,7 +2,7 @@ package com.pedroalmeida.repositoryservice.service;
 
 
 import com.pedroalmeida.repositoryservice.exception.GameNotFoundException;
-import com.pedroalmeida.repositoryservice.model.Game;
+import com.pedroalmeida.repositoryservice.db.Game;
 import com.pedroalmeida.repositoryservice.repository.GameRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

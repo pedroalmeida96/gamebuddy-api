@@ -1,4 +1,4 @@
-package com.pedroalmeida.repositoryservice.model;
+package com.pedroalmeida.repositoryservice.db;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

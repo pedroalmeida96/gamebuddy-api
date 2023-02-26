@@ -1,7 +1,7 @@
 package com.pedroalmeida.gamebuddyservice.controller;
 
 
-import com.pedroalmeida.gamebuddyservice.model.Game;
+import com.pedroalmeida.common.Game;
 import com.pedroalmeida.gamebuddyservice.service.GameService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

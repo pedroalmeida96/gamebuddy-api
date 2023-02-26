@@ -1,6 +1,6 @@
 package com.pedroalmeida.repositoryservice.controller;
 
-import com.pedroalmeida.repositoryservice.model.Game;
+import com.pedroalmeida.repositoryservice.db.Game;
 import com.pedroalmeida.repositoryservice.service.GameService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
