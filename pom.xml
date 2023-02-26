@@ -13,6 +13,7 @@
         <module>gamebuddy-svc</module>
         <module>repository-svc</module>
         <module>constants-svc</module>
+        <module>common</module>
     </modules>
 
     <properties>
@@ -41,6 +42,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.pedroalmeida</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

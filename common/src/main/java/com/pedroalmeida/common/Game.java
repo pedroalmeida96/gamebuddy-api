@@ -1,4 +1,4 @@
-package com.pedroalmeida.gamebuddyservice.model;
+package com.pedroalmeida.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
